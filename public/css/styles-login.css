@@ -1,0 +1,476 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+div.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+header div.logo,
+header .form{
+    width: 50%;
+}
+
+header div.logo{
+    padding: 10px;
+}
+header .form{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
+header nav{
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+@media (min-width: 361px){
+    main section article .description{
+        display: block;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+}
+
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+}
+
+/* FOOTER */
+footer {
+    background-color: white;
+    text-align: center;
+    font-family: 'Roboto';
+}
+.articulosFooter h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+.articulosFooter p {
+    font-size: 10px;
+    width: 200px;
+    margin:auto;
+}
+.Copyright {
+    text-align: center;
+    font-size: 8px;
+    padding-top: 20px;
+}
+.fa-credit-card, .fa-gift, .fa-user-shield {
+    color: #0022AA;
+    transition: all 450ms;
+}
+.fa-credit-card:hover, .fa-gift:hover, .fa-user-shield:hover{
+    color: red;
+    }
+
+@media (min-width: 768px){
+        footer .ft-bloque{
+            display: flex;
+            flex-direction: row;
+            font-size: 50px;
+            justify-content:space-around;   
+            padding-top: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+            height: 200px;
+            width: 100vw;
+            align-items:center ;
+        }
+        .Copyright {
+            text-align: center;
+            font-size: 12px;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+        }
+        .articulosFooter {
+            text-align: center;
+            font-size: 30px;
+            align-self: center;
+            justify-content: space-between;
+        }
+    }
+/* FOOTER */
+
+
+.description{
+    display: none;
+}
+
+.main-article:hover .description{
+    display: block;
+}
+
+.fa-truck{
+    transition: all 800ms;
+}
+
+.fa-truck:hover{
+    transform:rotate(-90deg);
+}
+
+
+/* */
+
+
+/*  Version Mobile ocultamos nav. Version desktop y tablet ocultamos hamburguesa. */
+@media (max-width: 460px) {
+    nav {
+    display: none;
+    }
+}
+
+@media (min-width: 461px) {
+    .burger-menu {
+        display: none;
+        }
+}
+
+
+ /*Flexbox al top header*/
+
+ @media (min-width: 769px) {
+
+    .top-header{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        width: 100vw;
+        height: 15vw;
+    }
+    .top-header .logo{
+        width: 25vw;
+    }
+    .top-header .form{
+        width: 25vw;
+    }
+    .top-header p{
+        width: 25vw;
+    }
+         .main-navbar {
+        display: flex;
+        justify-content: space-around;
+        margin:auto;
+    }
+    .right-navbar {
+        display: flex;
+    }
+    .left-navbar {
+        display: flex;
+    }
+    .main-navbar li {
+        margin: 0 15px;
+    }
+}
+
+/* TABLET */
+@media (min-width: 461px) and (max-width: 768px) {
+
+    .top-header {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .top-header p {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .main-navbar {
+        display: flex;
+        justify-content: space-around;
+    }
+    .right-navbar {
+        display: flex;
+    }
+    .left-navbar {
+        display: flex;
+    }
+    .main-navbar li {
+        padding: 5px;
+        max-height: 20px;
+        text-align: center;
+    }
+    header div.top-header p{
+        display: flex;
+        max-height: 20px;
+    }
+}
+
+
+/* MAXIMO ANCHO DE NAVBAR 1200*/
+@media (min-width: 1200px) {
+    .top-header, .main-navbar {
+        max-width: 1200px;
+        margin:auto;
+    }
+}
+
+
+/* HEADER */
+
+header nav {
+    font-size:12px;
+    padding-bottom: 40px;
+}
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+header div .logo {
+    width: 50%;
+    padding:10px;
+}
+header div .form {
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    width:50%;
+}
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+/*
+.top-header{
+    padding: 5%;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+ HEADER*/
+
+
+
+
+ 
+/* LOGIN*/
+.create-form {
+    padding: 20px 15px;
+    background-color: lightgray;
+}
+.control-formulario {
+    margin-bottom: 15px;
+}
+form  label h2 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.control1 {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: white;
+}
+.boton-formulario {
+    background-color: #0022AA;
+    border: none;
+    font-size: 12px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 100%;
+    opacity: 0.5;
+    transition: all 450ms;
+}
+.boton-formulario:hover{
+background-color: #0022AA;
+opacity: 1;
+}
+
