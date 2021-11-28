@@ -2,9 +2,8 @@ const express = require("express");
 const app = express();
 
 app.use(express.static("public"));
-const puerto = 3000
 
-app.listen(process.env.PORT || puerto, ()=>{
+app.listen(3000, ()=>{
     console.log("servidor funcionando")
     });
     
