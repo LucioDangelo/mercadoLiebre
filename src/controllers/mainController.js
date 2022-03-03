@@ -1,4 +1,4 @@
-const juegosDeMesa = [
+const productosMercadoLiebre = [
     {
         id:1,
         titulo: 'Alien: El juego oficial',
@@ -35,7 +35,7 @@ const juegosDeMesa = [
 
 const mainController = {
     index: (req, res) => {
-        res.render('index', { productos: juegosDeMesa})
+        res.render('index', { productos: productosMercadoLiebre})
     },
 };
 

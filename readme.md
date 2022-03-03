@@ -1,0 +1,1 @@
+El proyecto realizado es uno de los entregables individuales obligatorios necesarios para la aprobación del curso. 

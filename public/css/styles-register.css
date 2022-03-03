@@ -264,7 +264,7 @@ footer {
             justify-content: space-between;
         }
     }
-/* FOOTER */
+
 
 
 .description{
@@ -284,10 +284,7 @@ footer {
 }
 
 
-/* */
 
-
-/*  Version Mobile ocultamos nav. Version desktop y tablet ocultamos hamburguesa. */
 @media (max-width: 460px) {
     nav {
     display: none;
@@ -301,7 +298,6 @@ footer {
 }
 
 
- /*Flexbox al top header*/
 
  @media (min-width: 769px) {
 
@@ -338,7 +334,7 @@ footer {
     }
 }
 
-/* TABLET */
+
 @media (min-width: 461px) and (max-width: 768px) {
 
     .top-header {
@@ -373,7 +369,7 @@ footer {
 }
 
 
-/* MAXIMO ANCHO DE NAVBAR 1200*/
+
 @media (min-width: 1200px) {
     .top-header, .main-navbar {
         max-width: 1200px;
@@ -382,7 +378,6 @@ footer {
 }
 
 
-/* HEADER */
 
 header nav {
     font-size:12px;
@@ -428,20 +423,7 @@ header div.top-header p{
     text-align: center;
     margin-top: 10px;
 }
-/*
-.top-header{
-    padding: 5%;
-    display:flex;
-    flex-wrap: wrap;
-}
 
- HEADER*/
-
-
-
-
-
-/* FORM*/
 
 .create-form {
     padding: 20px 15px;
@@ -512,16 +494,11 @@ form  label h2 {
 }
 
 
-/* fixed header
 
-.main-header{
-    position: fixed;
-    top:0;
-    z-index: 100;
-}
-.create-form{
-    margin-top: 289px;
-}
+
+
+
+/* fixed header
 .product{
     padding:0px 15px;
     position:relative;
@@ -550,6 +527,44 @@ form  label h2 {
     align-items: center;
     opacity: 0;
     transition: all 450ms;
+}
+*/
+
+@media (max-width: 460px) {
+    .bodyEj{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .main-header{
+        position: fixed;
+        width: 100%;
+        top:0;
+        z-index: 100;
+    }
+    .create-form{
+        margin-top: 11.5em;
+    }
+}
+
+
+@media (min-width: 461px) and (max-width: 768px) {
+    .bodyEj{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .main-header{
+        position: fixed;
+        width: 100%;
+        top:0;
+        z-index: 100;
+    }
+    .create-form{
+        margin-top: 16em;
+    }
+
+    
 }
 
 
